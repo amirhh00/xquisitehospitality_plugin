@@ -1,0 +1,74 @@
+.floating_booking {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  padding: 15px 20px;
+  transition: all 0.2s ease;
+  background-color: #000 !important;
+  z-index: 9999999;
+}
+
+.floating_booking:hover {
+  color: black !important;
+  background: #c4b483 !important;
+}
+
+footer.site-footer {
+  padding-bottom: 90px;
+}
+
+footer.site-footer .c-footer__zone:not(:empty) + .c-footer__zone {
+  margin-top: 40px;
+}
+
+#newsletter_wrapper {
+  background: #c4b483;
+  padding: 28px 20px;
+  border-top: 53px solid black;
+  border-bottom: 3px solid black;
+}
+
+#newsletter {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  max-width: 1264px;
+  gap: 20px;
+}
+
+#newsletter p {
+  flex: 1;
+  margin: 0;
+  color: black;
+}
+
+#newsletter .btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border-width: 3px;
+}
+
+#call_us_wrapper {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  z-index: 9999999;
+}
+#call_us_wrapper #call_us {
+  width: 50px;
+  height: 50px;
+}
+
+@media not screen and (min-width: 50em) {
+  #newsletter {
+    flex-direction: column;
+  }
+  #call_us_wrapper {
+    display: block;
+  }
+}
